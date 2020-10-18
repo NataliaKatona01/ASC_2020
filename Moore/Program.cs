@@ -11,7 +11,7 @@ namespace Moore
         static void Main(string[] args)
         {
             int n;
-            Console.WriteLine("Amplificarea puterii");
+            Console.WriteLine("n=");
             try
             {
                 n = int.Parse(Console.ReadLine());
@@ -21,11 +21,11 @@ namespace Moore
                 Console.WriteLine("Numarul trebuie sa fie intreg", e.Message);
                 return;
             }
-            double rezultatluni;
-            rezultatluni = (Math.Log(n, 2) * 18);
-            double rezultatani = rezultatluni / 12;
-            Console.WriteLine("in aproximativ " + Math.Round(rezultatani) + "ani" + "(" + Math.Round(rezultatluni) + "luni)" + "puterea va fi de " + n + "ori mai mare");
-            Console.WriteLine("[" + rezultatani + " ani" + "(" + rezultatluni + "luni)]");
+            double luni;
+            luni = (Math.Log(n, 2) * 18);
+            double ani = luni / 12;
+            Console.WriteLine("in aproximativ " + Math.Round(ani) + "ani" + "(" + Math.Round(luni) + " luni)" + "puterea va fi de " + n + " ori mai mare");
+            Console.WriteLine("[" + ani + " ani " + "(" + luni + " luni)]");
             _ = Console.ReadKey();
 
         }
